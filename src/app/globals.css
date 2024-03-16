@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Kanit:wght@400;700&family=Quicksand:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans&display=swap');
+
+
+:root {
+	--neon-green: #45FFCA;
+	--neon-yellow: #FEFFAC;
+	--light-green: #DCFFB7;
+	--pastel-red: #FF6868;
+	--soft-purple: #BEADFA;
+	--softer-purple: #D0BFFF;
+}
+
+
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+body::-webkit-scrollbar {
+	width: 0px;
+}
+
+.headNav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 95%;
+	margin: -10px auto;
+	font-family: "Quicksand";
+}
+
+.rightNav {
+	display: flex;
+	cursor: pointer;
+}
+
+.rightNav a {
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+}
+
+.rightNav p {
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: black;
+	}
+
+	.rightNav a {
+		color: white;
+	}
+}
